@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps, GetServerSideProps } from 'next'
 import Link from 'next/link'
 
 import { User } from '../../interfaces'
@@ -26,12 +26,11 @@ const WithStaticProps = ({ items }: Props) => (
   </Layout>
 )
 
-export const getStaticProps: GetStaticProps = async () => {
-  // Example for including static props in a Next.js function component page.
-  // Don't forget to include the respective types for any props passed into
-  // the component.
+export async function getServerSideProps() {
+  // fetch latest products from the API
   const items: User[] = sampleUserData
   return { props: { items } }
 }
+
 
 export default WithStaticProps
