@@ -6,6 +6,7 @@ const domainsProvider = [
   'img.olx.com.br',
   'http2.mlstatic.com',
   'image1.mobiauto.com.br',
+  'res.cloudinary.com',
 ]
 
 module.exports = withPlugins([
