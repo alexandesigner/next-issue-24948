@@ -14,10 +14,9 @@ const ListDetail = ({ item: user }: ListDetailProps) => (
     <Image
       src={user.image}
       objectFit="cover"
-      width={300}
-      height={250}
+      width={800}
+      height={600}
       alt=""
-      loading="lazy"
     />
   </div>
 )

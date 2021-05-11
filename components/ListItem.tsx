@@ -13,11 +13,10 @@ const ListItem = ({ data }: Props) => (
     <a>
       <Image
         src={data.image}
-        objectFit="cover"
         width={300}
         height={250}
+        objectFit="cover"
         alt=""
-        loading="lazy"
       />
       {data.id}: {data.name}
     </a>
